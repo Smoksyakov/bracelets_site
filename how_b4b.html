@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Banded with Beads</title>
+		<link rel ="stylesheet" href = "banded_with_beads.css">
+		<link rel ="stylesheet" href = "css/BOOTSTRAP.css">
+		<link rel ="stylesheet" href = "css/font-awesome.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.bgswitcher.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script>
+
+			$(document).ready(function(){
+				$('.bgswitcher').bgswitcher({
+					images: ["images/how_background_1.jpg", "images/how_background_2.jpg", "images/how_background_3.jpg"],
+					effect: "fade",
+					interval: 3000
+				});
+			});
+
+			$(document).ready(function(){
+				$('#down_arrow').hide();
+			});
+
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 2200) {
+						$('#down_arrow').fadeIn();
+					}
+					else {
+						$('#down_arrow').fadeOut();
+					}
+				});
+			});
+
+			$(document).ready(function(){
+				$('#percent').hide();
+			});
+
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 1600) {
+						$('#percent').fadeIn();
+					}
+					else {
+						$('#percent').fadeOut();
+					}
+				});
+			});
+
+			$(document).ready(function(){
+				$('#money').hide();
+			});
+
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 1000) {
+						$('#money').fadeIn();
+					}
+					else {
+						$("#money").fadeOut();
+					}
+				});
+			});
+
+			$(document).ready(function(){
+				$('#bracelet').hide();
+			});
+
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 800) {
+						$('#bracelet').fadeIn();
+					}
+					else {
+						$("#bracelet").fadeOut();
+					}
+				});
+			});
+
+
+
+
+
+
+				
+
+		</script>
+	</head>
+	<body>
+
+		<div class="container-fluid">
+
+			<div class="container-fluid">
+			<div class="row">
+				<nav>
+					<div id="mySidenav" class="sidenav">
+						<ul>
+							<a href="Banded_with_beads.html"><li>Home</li></a>
+							<a href="Who_b4b"><li>Who</li></a>
+							<a href="What_b4b"><li>What</li></a>
+							<a href="how_b4b"><li>How</li></a>
+						    <a href="Order_b4b"><li>Order</li></a>
+						</ul>
+					</div>
+
+					<button class="c-hamburger c-hamburger--rot" onclick="toggleNav()" style="z-index:1;">
+				  		<span>toggle menu</span>
+					</button>
+
+
+					 
+					<script>
+					function openNav() {
+					    document.getElementById("mySidenav").style.width = "100%";
+					}
+
+					function closeNav() {
+					    document.getElementById("mySidenav").style.width = "";
+					    document.body.style.backgroundColor = "white";
+					}
+
+					function toggleNav() {
+						console.log("Here")
+						var width = document.getElementById("mySidenav").style.width;
+						console.log(width)
+						if (width == "")
+						{
+							openNav();
+						}
+						else
+						{
+							closeNav();
+						}
+					}
+
+					(function() {
+
+					  "use strict";
+
+					  var toggles = document.querySelectorAll(".c-hamburger");
+
+					  for (var i = toggles.length - 1; i >= 0; i--) {
+					    var toggle = toggles[i];
+					    toggleHandler(toggle);
+						  };
+
+					  function toggleHandler(toggle) {
+					    toggle.addEventListener( "click", function(e) {
+					      e.preventDefault();
+					      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+						    });
+						  }
+
+						})();
+					</script>
+				</nav>
+			</div>
+		</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="bgswitcher">
+						<div class="how_text">
+							How Does <span>YOUR</span> bracelet contruibute?
+						</div>
+					</div>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div class="row">
+					<div class="what_text" style="text-align:center;font-size:80px;">One Purchase = One Donation</div>
+				</div>
+
+				<div class="spacer"></div>
+
+				<div class="row">
+					<div class="col-md-offset-1 col-md-4">
+						<div id="bracelet">
+							<img src="images/bracelet_icon.png" style="border-radius:20px;max-width:100%;">
+							<div id="how_text_1">
+								Out of the selection of bracelets, see which one fits your personality and pick it
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-4">
+						<div id="diag_arrow_1"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-offset-7 col-md-4">
+						<div id="money" style="margin-top:-20%;">
+							<center><i class="fa fa-money" aria-hidden="true"></i></center>
+							<div id="how_text_2">
+								All bracelets cost the same price, $14
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-offset-5 col-md-4" style="margin-top:-15%;">
+						<div id="diag_arrow_2"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-offset-1 col-md-4">
+						<div id="percent">
+							<center><i class="fa fa-percent" aria-hidden="true"></i></center>
+							<div id="how_text_3">
+								10% of every purchase will get donated to the charity represented on your bracelet
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-offset-3 col-md-6" style="margin-top:10%;">
+						<center>
+							<div id="down_arrow"></div>
+						</center>
+					</div>
+				</div>
+
+				<div class="row">
+					<center>
+						<div class="col-md-offset-3 col-md-6" id="goal_div">
+							You Got a Stylish Bracelet <br>
+							You Donated to Help Animals <br>
+							You Made a Difference
+							
+						</div>
+					</center>
+
+				</div>
+
+			</div>
+
+			<div class='footer' style="text-align:center;font-family:arial;font-size:25px;">
+				<div>Bands for a Better</div><br>
+				<div>
+					<i class="fa fa-facebook-square" aria-hidden="true" style="margin-right:10px;"></i>
+					<i class="fa fa-instagram" aria-hidden="true" style="margin-right:10px;"></i>
+					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+			</div>
+			<div style="margin-top:25px;">	
+				<ul>
+					<li>Who We Are</li>
+					<li>What We Want</li>
+					<li>What We Have</li>
+					<div class="clearfix"></div>
+				</ul>
+			</div>	
+		</div>
+
+		</div>	
+
+
+
+	</body>
+</html>	
+
+

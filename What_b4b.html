@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Banded with Beads</title>
+		<link rel ="stylesheet" href = "banded_with_beads.css">
+		<link rel ="stylesheet" href = "css/BOOTSTRAP.css">
+		<link rel ="stylesheet" href = "css/font-awesome.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+
+
+			<div class="container-fluid">
+			<div class="row">
+				<nav>
+					<div id="mySidenav" class="sidenav">
+						<ul>
+							<a href="Banded_with_beads.html"><li>Home</li></a>
+							<a href="Who_b4b"><li>Who</li></a>
+							<a href="What_b4b"><li>What</li></a>
+							<a href="how_b4b"><li>How</li></a>
+						    <a href="#"><li>Order</li></a>
+						</ul>
+					</div>
+
+					<button class="c-hamburger c-hamburger--rot" onclick="toggleNav()" style="z-index:1;">
+				  		<span>toggle menu</span>
+					</button>
+
+
+					 
+					<script>
+					function openNav() {
+					    document.getElementById("mySidenav").style.width = "100%";
+					}
+
+					function closeNav() {
+					    document.getElementById("mySidenav").style.width = "";
+					    document.body.style.backgroundColor = "white";
+					}
+
+					function toggleNav() {
+						console.log("Here")
+						var width = document.getElementById("mySidenav").style.width;
+						console.log(width)
+						if (width == "")
+						{
+							openNav();
+						}
+						else
+						{
+							closeNav();
+						}
+					}
+
+					(function() {
+
+					  "use strict";
+
+					  var toggles = document.querySelectorAll(".c-hamburger");
+
+					  for (var i = toggles.length - 1; i >= 0; i--) {
+					    var toggle = toggles[i];
+					    toggleHandler(toggle);
+						  };
+
+					  function toggleHandler(toggle) {
+					    toggle.addEventListener( "click", function(e) {
+					      e.preventDefault();
+					      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+						    });
+						  }
+
+						})();
+					</script>
+				</nav>
+			</div>
+		</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="what_banner">
+						<div style="margin-top:16%;color:white;text-shadow:black 1px 1px;">Which Bracelet Will You Get?</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="spacer"></div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 what_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Duis aute irure dolor in reprehenderit in voluptate velit esse pidatat non proident, sunt in culpa qui officia deserunt mollit anim id est ........"</div>
+					<div class="col-md-5">
+						<img class="img-responsive" src="images/b_lion_2.jpg">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-5">
+						<img class="img-responsive" src="images/b_lion_2.jpg">
+					</div>
+					<div class="col-md-7 what_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Duis aute irure dolor in reprehenderit in voluptate velit esse pidatat non proident, sunt in culpa qui officia deserunt mollit anim id est ........"</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 what_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Duis aute irure dolor in reprehenderit in voluptate velit esse pidatat non proident, sunt in culpa qui officia deserunt mollit anim id est ........"</div>
+					<div class="col-md-5">
+						<img class="img-responsive" src="images/b_lion_2.jpg">
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-5">
+						<img class="img-responsive" src="images/b_lion_2.jpg">
+					</div>
+					<div class="col-md-7 what_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Duis aute irure dolor in reprehenderit in voluptate velit esse pidatat non proident, sunt in culpa qui officia deserunt mollit anim id est ........"</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 what_text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea. Duis aute irure dolor in reprehenderit in voluptate velit esse pidatat non proident, sunt in culpa qui officia deserunt mollit anim id est ........"</div>
+					<div class="col-md-5">
+						<img class="img-responsive" src="images/b_lion_2.jpg">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="test_2">
+							<div class="img_desc">
+								<center><i class="fa fa-heart fa-3x" aria-hidden="true" style="margin-top:25%;"></i></center>
+								<center><div class="order_now">Order Now</div></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="test_2">
+							<div class="img_desc">
+								<center><i class="fa fa-heart fa-3x" aria-hidden="true" style="margin-top:25%;"></i></center>
+								<center><div class="order_now">Order Now</div></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="test_2">
+							<div class="img_desc">
+								<center><i class="fa fa-heart fa-3x" aria-hidden="true" style="margin-top:25%;"></i></center>
+								<center><div class="order_now">Order Now</div></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="test_2">
+							<div class="img_desc">
+								<center><i class="fa fa-heart fa-3x" aria-hidden="true" style="margin-top:25%;"></i></center>
+								<center><div class="order_now">Order Now</div></center>
+							</div>
+						</div>
+					</div>
+				</div>	
+					
+				<div class="row" style="margin-top:4%;">
+					<div class="col-md-3">
+						<div class="test_2">
+							<div class="img_desc">
+								<center><i class="fa fa-heart fa-3x" aria-hidden="true" style="margin-top:25%;"></i></center>
+								<a><center><div class="order_now">Order Now</div></center></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="test_2">
+							<div class="img_desc">
+								<center><i class="fa fa-heart fa-3x" aria-hidden="true" style="margin-top:25%;"></i></center>
+								<center><div class="order_now">Order Now</div></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="test_2">
+							<div class="img_desc">
+								<center><i class="fa fa-heart fa-3x" aria-hidden="true" style="margin-top:25%;"></i></center>
+								<center><div class="order_now">Order Now</div></center>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="test_2">
+							<div class="img_desc">
+								<center><i class="fa fa-heart fa-3x" aria-hidden="true" style="margin-top:25%;"></i></center>
+								<center><div class="order_now">Order Now</div></center>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="spacer"></div>
+
+			<div class='footer' style="text-align:center;font-family:arial;font-size:25px;">
+				<div>Bands for a Better</div><br>
+				<div>
+					<i class="fa fa-facebook-square" aria-hidden="true" style="margin-right:10px;"></i>
+					<i class="fa fa-instagram" aria-hidden="true" style="margin-right:10px;"></i>
+					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+			</div>
+			<div style="margin-top:25px;">	
+				<ul>
+					<li>Who We Are</li>
+					<li>What We Want</li>
+					<li>What We Have</li>
+					<div class="clearfix"></div>
+				</ul>
+			</div>	
+		</div>
+
+		</div>
+	</body>
+</html>			
