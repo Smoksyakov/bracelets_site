@@ -379,8 +379,8 @@
     color: rgba(248, 247, 247, 0.9);
     text-align: center;
     visibility: hidden;
-    text-align: center;
     padding: 10px;
+    font-size: 2em;
 }
 
 
@@ -523,9 +523,10 @@
 }
 
 .what_banner {
-    height: 500px;
+    height: 800px;
     width: 100%;
-    background: url(images/what_banner.jpeg);
+    background-attachment: fixed;
+    background: url(images/IMG_7520.JPG);
     background-size: cover;
     text-align: center;
     font-size: 85px;
@@ -534,6 +535,7 @@
 
 .who_box {
     text-align: justify;
+    overflow: hidden;
     border: 2px solid black;
     width: 75%;
     padding: 10px;
@@ -544,7 +546,7 @@
     padding: 75px;
     background: rgba(232, 232, 232, 0.1);
     font-size: 25px;
-    margin-top: 6%;
+    margin-top: 3%;
     border-radius: 25px;
 }
 
@@ -579,11 +581,117 @@
     opacity: 1;
 }
 
+.test_2-1:hover .img_desc{
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.test_2-2:hover .img_desc{
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.test_2-3:hover .img_desc{
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.test_2-4:hover .img_desc{
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.test_2-5:hover .img_desc{
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.test_2-6:hover .img_desc{
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.test_2-7:hover .img_desc{
+    visibility: visible;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
 .test_2 {
     height: 300px;
     max-width: 100%;
-    background: url(images/b_lion.jpg);
-    background-size: contain;
+    background: url(images/IMG_7490.JPG);
+    background-size: cover;
+    position: relative;
+    border: 1px solid black;
+}
+
+.test_2-1 {
+    height: 300px;
+    max-width: 100%;
+    background: url(images/IMG_7484.JPG);
+    background-size: cover;
+    position: relative;
+    border: 1px solid black;
+}
+
+.test_2-2 {
+    height: 300px;
+    max-width: 100%;
+    background: url(images/IMG_7486.JPG);
+    background-size: cover;
+    position: relative;
+    border: 1px solid black;
+}
+
+.test_2-3 {
+    height: 300px;
+    max-width: 100%;
+    background: url(images/IMG_7557.JPG);
+    background-size: cover;
+    position: relative;
+    border: 1px solid black;
+}
+
+.test_2-4 {
+    height: 300px;
+    max-width: 100%;
+    background: url(images/IMG_7450.JPG);
+    background-size: cover;
+    position: relative;
+    border: 1px solid black;
+}
+
+.test_2-5 {
+    height: 300px;
+    max-width: 100%;
+    background: url(images/IMG_7541.JPG);
+    background-size: cover;
+    position: relative;
+    border: 1px solid black;
+}
+
+.test_2-6 {
+    height: 300px;
+    max-width: 100%;
+    background: url(images/IMG_7501.JPG);
+    background-size: cover;
+    position: relative;
+    border: 1px solid black;
+}
+
+.test_2-7 {
+    height: 300px;
+    max-width: 100%;
+    background: url(images/IMG_7524.JPG);
+    background-size: cover;
     position: relative;
     border: 1px solid black;
 }
@@ -593,7 +701,7 @@
 }
 
 .bgswitcher {
-    height: 650px;
+    height: 800px;
     width: 100%;
     background-size: cover;
     background-position: center;
