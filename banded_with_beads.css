@@ -623,6 +623,53 @@
     opacity: 1;
 }
 
+.sold_out {
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(238, 241, 243, 0.6);
+    padding: 25%;
+    color: black;
+    font-size: 400%;
+    text-align: center;
+}
+
+.lion_sold {
+    background: url(images/IMG_7493.JPG);
+    width: 100%;
+    height: 353.05px;
+    background-size: cover;
+}
+
+.leop_sold {
+    background: url(images/IMG_7565.JPG);
+    width: 100%;
+    height: 353.05px;
+    background-size: cover;
+}
+
+.budd_sold {
+    background: url(images/IMG_7497.JPG);
+    width: 100%;
+    height: 353.05px;
+    background-size: cover;
+}
+
+.owl_sold {
+    background: url(images/IMG_7517.JPG);
+    width: 100%;
+    height: 353.05px;
+    background-size: cover;
+}
+
+.ele_sold {
+    background: url(images/IMG_7508.JPG);
+    width: 100%;
+    height: 353.05px;
+    background-size: cover;
+}
 
 .test_2 {
     height: 300px;
@@ -787,5 +834,32 @@
     line-height: 200%;
     color: gray;
     font-size: 60px;
-    padding: 24% 10% 25% 10%;
+    padding: 24% 10% 0 10%;
+}
+
+@media all and (max-device-width: 400px){
+    .test_2 {
+        display: none;
+    }
+    .test_2-1 {
+        display: none;
+    }
+    .test_2-2 {
+        display: none;
+    }
+    .test_2-3 {
+        display: none;
+    }
+    .test_2-4 {
+        display: none;
+    }
+    .test_2-5 {
+        display: none;
+    }
+    .test_2-6 {
+        display: none;
+    }
+    .test_2-7 {
+        display: none;
+    }
 }
